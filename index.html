@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : Sewing Bobbins 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20130631
+Redesigned: Joie Chang
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Joie Chang</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<!--[if IE 6]>
+<link href="default_ie6.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+</head>
+<body>
+    <div id="wrapper">
+        <div id="menu-wrapper">
+                <div id="logo">
+                    <a href="#"><img src="images/logo.png" alt = "logo" /></a>
+                
+                </div> 
+            <div id="menu" class="container">
+                <ul>
+                    <li class="current_page_item"><a href="#">About</a></li>
+                    <li><a href="arch.html">Architecture</a></li>
+                    <li><a href="art.html">Illustration</a></li>
+                    <li><a href="joiechangresume.pdf">Resume</a></li>
+                    <li><a href="joiechangportfolio.pdf">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+
+            <!-- end #menu --> 
+    </div>
+	
+    <div id = "menu-border">
+    </div>
+
+    <div class = "portfolio-wrapper">
+        <div class="slideshow-container">
+              <div class="mySlides fade">
+                <a href="art.html"><img src="images/banner1.png"></a>
+                
+              </div>
+
+              <div class="mySlides fade">
+                    <a href="art.html"><img src="images/banner2.png"></a>
+              </div>
+
+              <div class="mySlides fade">
+                    <a href="arch.html"><img src="images/banner3.png"></a>
+              </div>
+
+              <div class="mySlides fade">
+                    <a href="arch.html"><img src="images/banner4.png"></a>
+              </div>
+
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>            
+        </div>
+    </div>   
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1} 
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none"; 
+            }
+          for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace("active", "");
+            }
+          slides[slideIndex-1].style.display = "block"; 
+          dots[slideIndex-1].className += " active";
+        }
+    </script>        
+  
+		
+
+    
+    <div id="page" class="container">
+		<div id="content">
+			<div class="title">
+				<h2>About Me</h2>
+				<span class="byline">MIT Architecture Student, Designer & Illustrator</span> </div>
+			<p>I am a senior in MIT Architecture, Design and Computation department. My passion for design and the human experience comes out into my practical, project-based work.</p>
+            <p>I have a long standing interest in narratives, within art and writing, and how to express these narratives within different mediums. My background in academic world history combined with emerging technologies for architectural and urban development has led me to my interdisciplinary style of work.</p>
+		</div>
+		<div id="sidebar">
+			<div class="box2">
+				<div class= "image image-centered"><img src="images/bio.png" alt="Joie Chang's Photo" /></div>
+               
+			</div>
+		</div>
+	</div>
+    
+
+    
+    
+    
+    
+
+</div>
+</div>
+<div id="copyright" class="container">
+	<p>&copy; Joie Chang. All rights reserved. </p>
+</div>
+</body>
+</html>

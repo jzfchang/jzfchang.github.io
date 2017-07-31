@@ -1,0 +1,135 @@
+.row {
+  width: 1300px;
+  height: 330px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: left;
+}
+
+/* DEFINE THE SIZES OF STUFF HERE*/
+.content, .content img, .content .description {
+  height: 300px;
+  -webkit-transition: box-shadow .3s; /* Safari */
+  transition: box-shadow .3s ease-in-out;
+  transition: filter .3s ease-in-out;
+}
+
+.content.long, .content.long img, .content.long .description {
+  width: 700px;
+}
+
+.content.short, .content.short img, .content.short .description {
+  width: 500px;
+  
+}
+/*---------------------------*/
+
+.row .content {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0px 0px 0px 30px;
+/*  margin-left: 0px;*/
+}
+
+.content img {
+  z-index: -1;
+  position: absolute;
+
+  }
+
+/*What happens when you hover over the images?*/
+.content:hover {
+   box-shadow: inset 0px 0px 40px 20px rgba(0,0,0,0.6);
+   opacity: 100;
+}
+
+.content .description {
+  z-index: 1;
+  position: relative;
+  padding: 240px 30px 10px;
+  color: #fff;
+  opacity:0;
+  font-variant: small-caps;
+  letter-spacing: 0.20em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  font-size: 1.5em;
+  text-shadow: -1px 1px 5px #000;
+}
+
+.content .description.description-hover {
+  opacity: 1;
+   -webkit-transition: opacity.3s; /* Safari */
+  transition: opacity .3s ease-in-out;
+}
+
+
+/*-----------GALLERY-----------*/
+#portfolio-wrapper {
+  height: 750px; /*This is a bit hacky*/
+}
+
+.content-container {
+  position: absolute;
+  z-index: 0;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+.wmuSlider {
+  position: fixed;
+  z-index: 2;
+  margin: 0 auto;
+  left: -70px;
+  right: 0;
+  margin-top: -70px; /*You'll probably want to change this*/
+  background-color: white;
+  width: 1000px;
+  padding: 15px 30px;
+  overflow-y: scroll;
+  overflow-x:hidden;
+}
+
+
+    
+.hide-slider {
+  display: none;
+}
+
+.wmuSliderWrapper {
+  text-align: center;
+   
+}
+
+.wmuSliderPagination {
+  display: none;
+}
+
+.wmuSliderPrev, .wmuSliderNext {
+    position: absolute;
+    width: 40px;
+    height: 80px;
+    text-indent: -9999px;
+    background: url(images/sprites.png) no-repeat 0 0;
+    top: 50%;
+    margin-top: -40px;
+    z-index: 2;
+}
+.wmuSliderPrev {
+    background-position: 100% 0;
+    left: 20px;
+    opacity:30;
+}
+.wmuSliderNext {
+    right: 20px;
+    opacity:30;
+}
+
+.wmuSliderPrev:hover, .wmuSliderNext:hover{
+    
+    opacity:100;
+    transition: opacity 0.1s ease-in-out;
+}
