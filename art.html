@@ -6,205 +6,242 @@
     <title>Art</title>
     <meta name="keywords" content="art" />
     <meta name="description" content="" />
+    
+
     <link href="default.css" rel="stylesheet" type="text/css" media="all" />
     <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <!-- FOR THE FANCY THINGS DONE WITH THE PICTURES AND POPUPS, INCLUDE THESE -->
-    <link href="content.css" rel="stylesheet" type="text/css" media="all" />
-    <script src="jquery-1.12.1.min.js"></script>
-    <script src="wmuSlider-master/jquery.wmuSlider.min.js"></script>
-    <script src="wmuSlider-master/jquery.wmuGallery.min.js"></script>
-    <script src="content.js"></script>
+        <link rel="icon" href="images/favicon.ico" type="images/x-icon">
+    <!--fancybox CSS-->
+    <link href="gallery.css" rel="stylesheet" type="text/css" media="all" />
     
-
+    <link rel="stylesheet" type="text/css" href="fancybox-master/dist/jquery.fancybox.min.css">
+    
+  
 </head>
 
 <body>
-    <div id="wrapper">
-      <div id="menu-wrapper">
+
+  <div id="wrapper">
+
   			<div id="logo">
   				<a href="index.html"><img src="images/logo.png" alt = "logo" /></a>
 
               </div>
-          <div id="menu" class="container">
+          <div id="menu">
   			<ul>
                     <li><a href="index.html">About</a></li>
-                    <li><a href="arch.html">Architecture</a></li>
-                    <li class="current_page_item"><a href="#">Illustration</a></li>
-                    <li><a href="joiechangresume.pdf">Resume</a></li>
-                    <li><a href="joiechangportfolio.pdf">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li class="current_page_item"><a href="#">Gallery</a></li>
+                   <!-- <li><a href="joiechangresume.pdf">Resume</a></li>
+                    <li><a href="joiechangportfolio.pdf">Portfolio</a></li>-->
+                    <li><a href="index.html#contact">Contact</a></li>
                     
   			</ul>
   		</div>
-  	</div>
 
 
   </div>
   
-  <div id = "menu-border">
+    <div class="shadow">
     </div>
-      <!-- end #menu -->
-    <div class="wmuSlider hide-slider">
-        <div class="wmuSliderWrapper">
-            <article>
-                <img src="images/art/redberyl.png" />
-                <h3>Red Beryl</h3>
-                <p>Digital, 2015. Revolutionary Girl Utena</p>
-            </article>
-            <article>
-                <img src="images/art/ladyknightfinal.png" />
-                <h3>The Lady Knight.</h3>
-                <p>Acrylic, 2015. </p>
-            </article>
-            <article>
-                <img src="images/art/lastsummerpreview.png" />
-                <h3>This Last Summer (Comic Preview)</h3>
-                <p>Digital, 2015-present.</p>
-            </article>
-            <article>
-                <img src="images/art/sendforyou.png" />
-                <h3>And I Will Send For You</h3>
-                <p>Digital, 2016. </p>
-            </article>
-
-            <article>
-                <img src="images/art/pairskatingtmblr1.png" />
-                <img src="images/art/pairskatingtmblr.png" />
-                <h3>Stammi Vicino</h3>
-                <p>Digital, 2017. Yuri on Ice</p>
-            </article>
-                
-            <article>
-                <img src="images/art/aria.png" />
-                <h3>Aria.</h3>
-                <p>Digital, 2017. Yuri on Ice</p>
-            </article>
-
-            <article>
-                <img src="images/art/stevonnie.png" />
-                <h3>The Temple</h3>
-                <p>Digital, 2016. Steven Universe</p>
-            </article>
-            
-            <article>
-                <img src="images/art/armyremains.png" />
-                <h3>An Army Remains</h3>
-                <p>Digital, 2015. Steven Universe</p>
-            </article>
-            
-            <article>
-                <img src="images/art/valuekeyspread3.png" />
-                <h3>Value Studies</h3>
-                <p>Digital, 2015.</p>
-            </article>
-
-            <article>
-                <img src="images/art/tobeking.png" />
-                <h3>To Be King</h3>
-                <p>Ink, 2016.</p>
-            </article>
-            
-            </div>
-      </div>
-      
-    <div id="portfolio-wrapper">
-  		<div id="portfolio" class="container">
-            <div class="title">
-              <h1>Illustration and Painting</h1>
-              </br>
-                <h3>Paintings and Inked Work. <i>2015-2017.</i></h3>
-                <p id="demo"></p>
-            </div>
-            
-        <div class="content-container">
-        
-          <div id="row1" class="row">
-            <div class="long content" content-id="0">
-              <img src="images/thumb/longthumb3.png" />
-               
-            </div>
-            <div class="short content" content-id="1">
-              <img src="images/thumb/shthumb2.png" />
-          
-            </div>
-
-            </div>
-            
-            <div id="row2" class="row">
-                <div class="short content" content-id="2">
-                  <img src="images/thumb/shthumb1.png" />
-         
-                </div>
-                <div class="long content" content-id="3">
-                  <img src="images/thumb/longthumb2.png" />
-                  
-
-                </div>
-                
-
-            </div>
-           
-            
-            <div id="row3" class="row">
-              <div class="long content" content-id="4">
-                <img src="images/thumb/longthumb6.png" />
-               
-              </div>
-              
-              <div class="short content" content-id="5">
-                <img src="images/thumb/shthumb5.png" />
-              </div>
-              
-
-            </div>
-            
-           
-           <div id="row4" class="row">
-              <div class="short content" content-id="6">
-                <img src="images/thumb/shthumb3.png" />
-              </div>
-              <div class="long content" content-id="7">
-                <img src="images/thumb/longthumb1.png" />
-               
-              </div>
-
-            </div>
-            
-            
-            <div id="row5" class="row">
-                <div class="long content" content-id="8">
-                  <img src="images/thumb/longthumb5.png" />
-                  
-
-                </div>
-                <div class="short content" content-id="9">
-                  <img src="images/thumb/shthumb4.png" />
-         
-                </div>
-
-            </div>
-            
-        </div>
-      	</div>
-    </div>
-      
-  
-
  
-  <div id="copyright" class="container">
+    
+    <div class="gallery">  
+    
+    <div class="artgallery-header">
+    <h3 style="text-align:center"> GALLERY.</h3>
+    <p style="text-align:center">  2015-2017.</p>
+    <!--Row by Row, 3 x 3 Grid-->
+    </div>
+    
+    <div class="container">
+    
+    
+    
+    
+            <div class = "mix">
+                <div class = "imageCenter">
+                    <a href="images/art/wedding.png" data-fancybox="images">
+                    <img src="images/art/wedding.png">
+                    </a>
+                </div>
+            </div>
+            
+                  <div class = "mix">
+                <div class = "imageCenter">
+                    <a href="images/art/sendforyou.png" data-fancybox="images">
+                    <img src="images/art/sendforyou.png">
+                    </a>
+                </div>
+            </div>
+            
+    
+            <div class = "mix">
+                <div class = "imageCenter">
+                <a href="images/art/armyremains.png" data-fancybox="images">
+                <img src="images/art/armyremains.png">
+                </a>
+                </div>
+        </div>
+
+        <div class = "mix">
+                <div class = "imageCenter">
+                <a href="images/art/ch1pg2b3.png" data-fancybox="images">
+                <img src="images/art/ch1pg2b3.png">
+                </a>
+                </div>
+            </div>
+            
+        
+            <div class = "mix">
+                <div class = "imageCenter">
+                <a href="images/art/polaroidvacationfinal.png" data-fancybox="images">
+                <img src="images/art/polaroidvacationfinal.png">
+                </a>
+                </div>
+            </div>
+    
+            <div class = "mix">
+                <div class = "imageCenter">
+                <a href="images/art/choicebright.png" data-fancybox="images">
+                <img src="images/art/choicebright.png">
+                </a>
+                </div>
+            </div>
+
+            <div class = "mix">
+                <div class = "imageCenter">
+                <a href="images/art/aria.png" data-fancybox="images">
+                <img src="images/thumb/shthumb5.png">
+                </a>
+                </div>
+            </div>
+            
+
+    
+        <div class = "mix">
+                <div class = "imageCenter">
+                <a href="images/art/echoeszine.png" data-fancybox="images">
+                <img src="images/thumb/zinethumb.png">
+                </a>
+                </div>
+            </div>    
+           
+            
+        <div class = "mix">
+                <div class = "imageCenter">
+                <a href="images/art/LadyKnightFinal.png" data-fancybox="images">
+                <img src="images/art/LadyKnightFinal.png">
+                </a>
+                </div>
+            </div>
+            
+        
+        <div class = "mix">
+                <div class = "imageCenter">
+                <a href="images/art/shoutouno.png" data-fancybox="images">
+                <img src="images/art/shoutouno.png">
+                </a>
+                </div>
+            </div>
+    
+     <div class = "mix">
+                <div class = "imageCenter">
+                <a href="images/art/PairSkatingtmblr1.png" data-fancybox="images">
+                <img src="images/thumb/shthumb6.png">
+                </a>
+                </div>
+            </div>
+ 
+            <div class = "mix">
+                <div class = "imageCenter">
+                <a href="images/art/PairSkatingtmblr.png" data-fancybox="images">
+                <img src="images/art/PairSkatingtmblr.png">
+                </a>
+                </div>
+            </div>
+    
+    
+       <div class = "mix">
+                <div class = "imageCenter">
+                <a href="images/art/gameover.png" data-fancybox="images">
+                <img src="images/art/gameover.png">
+                </a>
+                </div>
+        </div>
+        
+            <div class = "mix">
+                <div class = "imageCenter">
+                <a href="images/art/valuekeyspread3.png" data-fancybox="images">
+                <img src="images/art/kidthumb.png">
+                </a>
+                </div>
+        </div>    
+
+        <div class = "mix">
+                <div class = "imageCenter">
+                <a href="images/art/stevonnie.png" data-fancybox="images">
+                <img src="images/thumb/shthumb3.png">
+                </a>
+                </div>
+        </div>
+
+
+
+        <div class = "mix">
+                <div class = "imageCenter">
+                <a href="images/art/redberyl.png" data-fancybox="images">
+                <img src="images/art/redberyl.png">
+                </a>
+                </div>
+        </div>
+
+        
+    
+    
+    
+    </div>
+   
+ <div id="copyright">
   	<p>&copy; Joie Chang. All rights reserved.</p>
   </div>
-</body>
+ 
+    </div>
+  
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="fancybox-master/dist/jquery.fancybox.min.js"></script>
 
-    <script>
-        window.onload = function rows(){
-            var rownum = document.getElementsByClassName('row').length;
-            var newheight = (rownum*380) + 50;
-            var n = newheight.toString();
-            n += "px";
-            document.getElementById("portfolio-wrapper").style.height = n;
-        }
-    </script>
+    <script type="text/javascript">
+        $().fancybox({
+            selector : '[data-fancybox="images"]',
+            thumbs   : false,
+            hash     : false,
+            protect : true,
+            keyboard : true,
+            loop : true, 
+            
+        mobile : {
+            clickContent : function( current, event ) {
+                return current.type === 'image' ? 'toggleControls' : false;
+            },
+            clickSlide : function( current, event ) {
+                return current.type === 'image' ? 'toggleControls' : 'close';
+            },
+            dblclickContent : function( current, event ) {
+                return current.type === 'image' ? 'zoom' : false;
+            },
+            dblclickSlide : function( current, event ) {
+                return current.type === 'image' ? 'zoom' : false;
+            }
+        },
+    
+        });
+      
+
+</script>
+
+    </body>
+
     
 </html>

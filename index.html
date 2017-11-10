@@ -1,126 +1,60 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<!--
-Design by TEMPLATED
-http://templated.co
-Released for free under the Creative Commons Attribution License
 
-Name       : Sewing Bobbins 
-Description: A two-column, fixed-width design with dark color scheme.
-Version    : 1.0
-Released   : 20130631
-Redesigned: Joie Chang
--->
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Joie Chang</title>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-<link href="default.css" rel="stylesheet" type="text/css" media="all" />
-<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
-<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-<!--[if IE 6]>
-<link href="default_ie6.css" rel="stylesheet" type="text/css" />
-<![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Joie Chang</title>
+    <meta name="keywords" content="about, joie chang, joie, mit architecture" />
+    <meta name="description" content="" />
+    <link href="default.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="images/x-icon">
+
+        <!--fancybox CSS-->
+    <link href="gallery.css" rel="stylesheet" type="text/css" media="all" />
+   
+    <link rel="stylesheet" type="text/css" href="fancybox-master/dist/jquery.fancybox.min.css">
 
 </head>
 <body>
     <div id="wrapper">
-        <div id="menu-wrapper">
                 <div id="logo">
                     <a href="#"><img src="images/logo.png" alt = "logo" /></a>
                 
                 </div> 
-            <div id="menu" class="container">
+            <div id="menu">
                 <ul>
                     <li class="current_page_item"><a href="#">About</a></li>
-                    <li><a href="arch.html">Architecture</a></li>
-                    <li><a href="art.html">Illustration</a></li>
-                    <li><a href="joiechangresume.pdf">Resume</a></li>
-                    <li><a href="joiechangportfolio.pdf">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="art.html">Gallery</a></li>
+                    <!--<li><a href="joiechangresume.pdf">Resume</a></li>
+                    <li><a href="joiechangportfolio.pdf">Portfolio</a></li>-->
+                    <li><a href="index.html#contact">Contact</a></li>
                     
                 </ul>
             </div>
-        </div>
+        
 
             <!-- end #menu --> 
     </div>
 	
+    
+    <div class="shadow">
+    </div>
+    
     <div id = "menu-border">
     </div>
-
-    <div class = "portfolio-wrapper">
-        <div class="slideshow-container">
-              <div class="mySlides fade">
-                    <a href="arch.html"><img src="images/banner4.png"></a>
-              </div>
-
-        <div class="mySlides fade">
-                <a href="art.html"><img src="images/banner1.png"></a>
-                
-              </div>
-
-              <div class="mySlides fade">
-                    <a href="art.html"><img src="images/banner2.png"></a>
-              </div>
-
-              <div class="mySlides fade">
-                    <a href="arch.html"><img src="images/banner3.png"></a>
-              </div>
-
-
-
-              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-              <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>            
-        </div>
-    </div>   
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-          showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-          showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-          var i;
-          var slides = document.getElementsByClassName("mySlides");
-          var dots = document.getElementsByClassName("dot");
-          if (n > slides.length) {slideIndex = 1} 
-          if (n < 1) {slideIndex = slides.length}
-          for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none"; 
-            }
-          for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace("active", "");
-            }
-          slides[slideIndex-1].style.display = "block"; 
-          dots[slideIndex-1].className += " active";
-        }
-    </script>        
-  
-		
-
     
-    <div id="page" class="container">
+    
+    <div class="page" style="background-color:#f5f6fb">
 		<div id="content">
 			<div class="title">
-				<h2>About Me</h2>
-				<span class="byline">MIT Architecture Student, Designer & Illustrator</span> </div>
-			<p>I am a 2017 MIT Architecture, Design and Computation graduate. My passion for design and the human experience comes out into my practical, project-based work.</p>
-            <p>I have a long standing interest in narratives, within art and writing, and how to express these narratives within different mediums. My background in academic world history combined with emerging technologies for architectural and urban development has led me to my interdisciplinary style of work.</p>
+				<h1>Joie Chang</h1>
+                </br>
+				<span class="byline">MIT Architecture Grad, Designer & Illustrator</span> </div>
+			<p>I am a graduate from the MIT Architecture, Design and Computation department. My passion for empathetic design and human experiences drives my creative projects.</p>
+            <p>Let's build a beautiful world together.</p>
 		</div>
 		<div id="sidebar">
 			<div class="box2">
@@ -129,17 +63,197 @@ Redesigned: Joie Chang
 			</div>
 		</div>
 	</div>
-    
 
     
+    <!--IMPLEMENT THE PROJECTS GOING DIRECTLY TO THE TABS-->
+
+    <!--PROJECTS -->
+    
+        <div class = "title">
+            <h3 style="text-align:center">works</h3>
+        <!--labels for each DESIGN ARCHITECTURE TECHNICAL ILLUSTRATION -->
+        </div>    
+        <div class="container">    
+        
+        
+        <div class = "mix">
+            <div class = "imageCenter">
+                    <a href="projects.html">
+                        <img src="images/archimages/thesis.png">
+                    </a>
+                    
+                    <div class = "label">
+                        <div class = "label-text">
+                        <div class = "text-title"><a href="projects.html">Design Research</a></div>
+                        <span class="text-category">Designing in Virtual Reality</span>
+                        </div>
+                    </div>
+                
+            </div>
+        
+        </div>
+        
+<!--PROMENADE-->
+        <div class = "mix">
+            <div class = "imageCenter">
+                    <a href="projects.html">
+                    <img src="images/archimages/promthumb.png">
+                    </a>
+                <div class = "label">
+                    <div class = "label-text">
+                        <div class = "text-title"><a href="projects.html">Architecture</a></div>
+                        <span class="text-category">Public Art Gallery on Summer Street</span>
+                    </div>
+                </div>
+            
+            </div>   
+        </div>
+        
+        
+        
+        <div class = "mix">
+            <div class = "imageCenter">
+                    <a href="projects.html">
+                    <img src="images/archimages/muqarnas.png">
+                    </a>
+                
+                <div class = "label">
+                    <div class = "label-text">
+                        <div class = "text-title"><a href="projects.html">Computation</a></div>
+                        <span class="text-category">Historical Muqarnas Shape Grammars</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
+        <div class = "mix">
+                <div class = "imageCenter">
+                    <a href="art.html">
+                    <img src="images/art/sendforyou.png">
+                    </a>
+                <div class = "label">
+                    <div class = "label-text">
+                        <div class = "text-title"><a href="art.html">Illustration</a></div>
+                        <span class="text-category">And I Will Send for You, 2016</span>
+                    </div>
+                </div>
+                
+                </div>
+        </div>
+
+    </div>    
+    
+    
+    <div class = "page"  style="background-color:#f5f6fb">
+    <!--
+    RESUME BUTTON
+    -->
+    <!--SKILLS -->
+    <div class = "centercontent">
+    <h2>skills</h2>
+    
+    <div id = "sidebar">
+    
+    <div class = "twocolumn">
+    <ul>
+    <li>Architectural Design</li>
+    <li>Digital Fabrication</li>
+    <li>Graphic Design</li>
+    <li>Motion Graphics</li>
+    </ul>
+    </div>
+    
+    <div class= "twocolumn">
+    
+    <ul>
+    <li>Web Design (HTML, CSS, Javascript)</li>
+    <li>Java, Python, Unity with C#</li>
+    <li>Illustration and Sequential Art</li>
+    <li>Virtual Reality Research</li>
+    </ul>
+    
+    
+    </div>
+    </div>
+    <div class="basiccontent">
+    <a href="joiechangresume.pdf" target="_blank">Resume</a>
+    <a href="joiechangportfolio.pdf" target="_blank">Portfolio</a>
+    </div>
+    </div>
+    </div>
+    
+    
+    <div class="page" id="contact">
+    
+    <!--CONTACT -->
+        <div id="content">
+			<div class="title">
+				<h2>Contact Me</h2>
+				
+            </div>
+            <p>Questions? Send me an email at <a href="mailto:jzfchang@gmail.com">jzfchang@gmail.com</a>. I am currently open for freelance work and long term employment. You can also find me at my <a href="https://www.linkedin.com/in/joie-chang-2955699a">LinkedIn</a>.</p>
+                            
+        </div>
+		
+            <div id="sidebar">
+                <div class="box2">
+                    <div class= "image image-left"><img src="images/border.png" alt="Joie Chang's Photo" /></div>
+                </div>
+            </div>
+        </div>
+   </div>
     
     
     
 
-</div>
-</div>
 <div id="copyright" class="container">
 	<p>&copy; Joie Chang. All rights reserved. </p>
 </div>
-</body>
+
+
+<script src="jquery-3.2.1.min.js"></script>
+    <script src="fancybox-master/dist/jquery.fancybox.min.js"></script>
+
+    <script type="text/javascript">
+        $().fancybox({
+            selector : '[data-fancybox="images"]',
+            thumbs   : false,
+            hash     : false,
+            protect : true,
+            keyboard : false,
+            loop : false, 
+            arrows: false,
+            toolbar: false,
+            
+            //in order to stop it from cycling through filtered options, currently disabled looping and keyboard arrows
+            
+        mobile : {
+            clickContent : function( current, event ) {
+                return current.type === 'image' ? 'toggleControls' : false;
+            },
+            clickSlide : function( current, event ) {
+                return current.type === 'image' ? 'toggleControls' : 'close';
+            },
+            dblclickContent : function( current, event ) {
+                return current.type === 'image' ? 'zoom' : false;
+            },
+            dblclickSlide : function( current, event ) {
+                return current.type === 'image' ? 'zoom' : false;
+            }
+        },
+    
+        });
+      
+
+</script>
+    <script src="mixitup.min.js"></script>
+    
+    <script>
+        var containerEl = document.querySelector('.container');
+        var mixer = mixitup(containerEl);
+    </script>
+    
+    </body>
+
 </html>

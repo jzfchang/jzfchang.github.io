@@ -1,0 +1,11 @@
+HEX CODES
+#359da4 - dark teal (i.e. menubar)
+#6bc5d  - light blue (i.e. menu selection)
+#cc6644 - burnt orange (i.e. gallery labels) 
+
+
+2a848a - active
+51b7be - hover
+
+
+#dd7474 - the pink

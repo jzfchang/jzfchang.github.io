@@ -1,0 +1,273 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+/* Container
+---------------------------------------------------------------------- */
+
+.container {
+    padding: 3rem;
+    text-align: justify;
+    font-size: 0.1px;
+}
+
+.container:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+.gallery-header{
+    background:#7ed0d0;
+    padding-top:6em;
+
+}
+
+.artgallery-header{
+    background:#dd7474;
+    padding-top:6em;
+    padding-bottom:1em;
+}
+
+
+/* Target Elements
+---------------------------------------------------------------------- */
+
+.mix,
+.gap {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.mix {
+    background: #fff;
+    border-radius: 2px;
+    margin-bottom: 1rem;
+    position: relative;
+    overflow:hidden;
+}
+
+.mix:before {
+    content: '';
+    display: inline-block;
+    padding-top: 56.25%;
+}
+
+.imageCenter {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    
+}
+
+
+/* Grid Breakpoints
+---------------------------------------------------------------------- */
+
+/* 2 Columns */
+
+.mix,
+.gap {
+    width: calc(100%/2 - (((2 - 1) * 1rem) / 2));
+    height:172px;
+}
+
+/*  Columns 
+@media screen and (min-width: 541px) {
+    .mix,
+    .gap {
+        width: calc(100%/2 - (((2 - 1) * 1rem) / 2));
+    }
+}
+*/
+
+
+/* 3 Columns */
+
+@media screen and (min-width: 700px) {
+    .mix,
+    .gap {
+        width: calc(100%/3 - (((3 - 1) * 1rem) / 3));
+        height:172px;
+    }
+}
+
+/* 4 Columns */
+
+@media screen and (min-width: 1300px) {
+    .mix,
+    .gap {
+        width: calc(100%/4 - (((4 - 1) * 1rem) / 4));
+        height:172px;
+    }
+}
+
+/* Controls */
+
+.controls {
+    padding: 1rem 5rem 1rem 5rem;
+    margin: 10px 0px 10px 0px;
+    font-size: 0.1px;
+    background: #333;
+    text-align:center;
+}
+
+.control-label {
+   text-transform:uppercase;
+   font-size: 15px;
+   margin-left: 0px;
+   color:#fff;
+   
+}
+
+.control {
+    position: relative;
+    display: inline-block;
+    width: 7rem;
+    height: 2.3rem;
+    background: #3f3f3f;
+    cursor: pointer;
+    font-size: 12px;
+    letter-spacing: .5px;
+    color: white;
+    transition: background 150ms;
+    margin: 0px 5px 0px 5px;
+    
+}
+
+.control:hover {
+    background: #33cccc;
+}
+
+.control[data-filter]:after,
+.control[data-toggle]:after {
+    /*content: '';*/
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: calc(50% - 6px);
+    left: calc(50% - 6px);
+    /*border: 2px solid currentColor;
+    border-radius: 2px;*/
+    background: currentColor;
+    transition: background-color 150ms, border-color 150ms;
+}
+
+.mixitup-control-active {
+    background: #009999;
+}
+
+.mixitup-control-active[data-toggle]:after {
+    background: transparent;
+}
+
+.control:first-of-type {
+    border-radius: 2px 0 0 2px;
+}
+
+.control:last-of-type {
+    border-radius: 0 2px 2px 0;
+}
+
+.control[data-filter=".green"],
+.control[data-toggle=".green"] {
+    color: #91e6c7;
+}
+
+.control[data-filter=".blue"],
+.control[data-toggle=".blue"] {
+    color: #5ecdde;
+}
+
+.control[data-filter=".pink"],
+.control[data-toggle=".pink"] {
+    color: #d595aa;
+}
+
+/* Container
+---------------------------------------------------------------------- */
+
+.container {
+    padding: 1rem;
+    text-align: justify;
+    font-size: 0.1px;
+}
+
+.container:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+
+.mix[data-projecttitle]:after {
+    position: absolute;
+    font-size: 1rem;
+    content: '';
+    font-weight: bold;
+    color: #aaa;
+    padding: 1rem;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.mix[data-projecttitle]:hover {
+    content: attr(data-projecttitle);
+}
+
+.mix .label {
+    position: absolute;
+    width: 100%;
+    height:40px;
+    bottom: -8px;
+    background-color:#ff6666;
+    -webkit-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition:         all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+	}
+
+	/*	.mix .label-bg {
+			background: #e95a44;
+			width: 100%;
+			height:100%;
+			position: absolute;
+			top:0;
+			left:0;
+		}*/
+	
+		.mix .label-text {
+			color:#fff;
+			position: relative;
+			z-index:500;
+			padding:5px 8px;
+
+		}
+
+        .mix .text-title a {
+            text-transform: uppercase;
+            font-size:13px;
+            color: #fff;
+            text-decoration:none;
+            padding-bottom: 5px;
+        }
+
+        
+        .mix .label a:hover  {
+            color: #000;
+            
+        }
+			
+			.mix .text-category {
+				display:block;
+				font-size:11px;
+                color: #fff;
+			}
+	
+	.mix:hover .label {
+    bottom:28px;
+    }
+
