@@ -1,0 +1,414 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>QCal Case Study</title>
+    <meta name="keywords" content="qcal, case study, joie chang, ui, ux" />
+    <meta name="description" content="" />
+    <link href="default.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="images/x-icon">
+
+        <!--fancybox CSS-->
+    <link href="gallery.css" rel="stylesheet" type="text/css" media="all" />
+   
+    <link rel="stylesheet" type="text/css" href="fancybox-master/dist/jquery.fancybox.min.css">
+
+</head>
+<body>
+    <div id="wrapper">
+                <div id="logo">
+                    <a href="#"><img src="images/logo.png" alt = "logo" /></a>
+                
+                </div> 
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li class="current_page_item"><a href="projects.html">Projects</a></li>
+                    <li><a href="art.html">Art</a></li>
+                    <!--<li><a href="joiechangresume.pdf">Resume</a></li>
+                    <li><a href="joiechangportfolio.pdf">Portfolio</a></li>-->
+                    <li><a href="index.html#contact">Contact</a></li>
+                    
+                </ul>
+            </div>
+        
+
+            <!-- end #menu --> 
+    </div>
+	
+    
+    <div class="shadow">
+    </div>
+    
+    <div id = "menu-border">
+    </div>
+    
+    
+    <div class="page">
+		<div id="sidebar-left">
+			
+				<div class="title">
+					<h1>GalleryPal Design Sprint</h1>
+					</br>
+					<span class="byline">an educational app for art galleries and museums</span> 
+					</br>
+					</br>
+					<span class="byline">by Joie Chang - May 2022</span> 
+				</div>
+				
+		</div>
+		<div class="topcontent">
+			<a href="GalleryPal Case Study_joiechang.pdf" target="_blank">Download PDF</a>
+
+		</div>
+	
+		<div class= "image image-centered"><img src="images/gallerypal/hifi.png" alt="Gallerypal Mockup" /></div>
+               
+		
+			
+	
+	</div>
+
+    
+    <!--IMPLEMENT THE PROJECTS GOING DIRECTLY TO THE TABS-->
+
+    <!--PROJECTS -->
+    <div class = "page" style="background-color:#f5f6fb">
+        <div class = "centercontent">
+            <h2>Introduction</h2>
+        <!--labels for each DESIGN ARCHITECTURE TECHNICAL ILLUSTRATION -->
+        </div>    
+      
+        </br>
+		<div class="sidebar">
+        <h3>Background</h3>
+		</br>
+		<p>Deciding what to see and trying to learn more about art in a museum can often feel overwhelming, thanks to large collections, uneven signage, and lack of guidance. Many visitors leave museums feeling like they could have gotten more out of their experience. While some have done research ahead of time, most only have a general idea of what is in the gallery, and visitors will discover new artworks that they will want to learn more about on the spot. GalleryPal wants to improve the experience of viewing art in a gallery or museum. </p>
+		</br>
+		
+		<h3>Problem</h3>
+		</br>
+		<p>Visitors are often interested in why certain pieces of art are chosen over others, the context of a specific piece of art, and the artist’s intentions when creating them. Receiving more information about the art then helps the visitors develop a deeper relationship to their favorite pieces. Therefore:</p>
+		
+		<center><h4>“How might we introduce context, stories, and information about works of art to gallery visitors, without overwhelming or confusing them?” </h4></center>
+
+		</br>
+		<h3>Solution</h3>
+		</br>
+		<p>Our goal was to help GalleryPal improve the experience of museum visitors, by teaching these visitors more about the art they were viewing. During this five day design sprint, I prototyped a solution that would quickly identify art through a user’s camera and provide unique audio recordings that the user could listen to and learn from.</p>
+		</br>
+		<h3>Role</h3>
+		</br>
+		<p>As the primary designer, I ran a solo version of the Google Ventures design sprint. I synthesized insights from our user research, built a high-fidelity prototype, and conducted usability tests for this case study. </p>
+
+        </div>
+       </div>
+		
+   
+    
+ 
+<!-- SECTION 2 --> 
+    <div class = "page">
+ 
+		<div class = "title">
+            <h3 style="text-align:center">Day 1: Mapping Solutions</h3>
+        </div> 
+		
+		
+			<div class= "image image-right">
+			<a href="images/gallerypal/persona.png" data-fancybox="images">			
+				<img src="images/gallerypal/persona_thumb.png" alt="Persona" />
+			</a>	
+			</br>
+			<center><i>Persona for GalleryPal</i></center>
+			</br>
+			</br>
+			</div>
+
+		<div class="sidebar">
+		<h3>Synthesizing Research</h3>
+		</br>	
+		<p>My first task was to research and understand the problem space. GalleryPal had already conducted user research and recorded an interview with a tour guide expert, Lena Carroll, who works for the Museum of Natural History in New York. By using these key insights, I learned that visitors were interested in the medium of pieces, the artist’s intentions, and the context for different works. Often they wanted to know why a piece of art is displayed in a gallery. Through telling stories and giving fun facts, tour guides are able to help their visitors connect more with the art in front of them. </p>
+		
+		<div class="clearfix">
+			</br>
+			</br>
+		</div>
+		
+		
+		<p>Next, I mapped out several different user journeys for the GalleryPal product. This helped me visualize how to accomplish the end goal of the experience: to hear stories and learn about the artwork. I settled on my second user journey as the blueprint for the rest of my design. </p>
+
+		<div class= "image image-centered">
+			<a href="images/gallerypal/userflows.png" data-fancybox="images">
+			<img src="images/gallerypal/userflows_thumb.png" alt="User Journeys" />
+			</a>
+			</br>
+			<center><i>User Journeys for GalleryPal</i></center>
+			</br>
+		</div>
+		</div>
+	
+
+
+	</div>
+	
+	<!--SECTION 3-->
+	<div class = "page" style="background-color:#f5f6fb">
+		<div class="centercontent">
+			<h2>Day 2: Sketching</h2>
+		</div>
+		</br>
+			<h3>Lightning Demos</h3>
+			</br>
+		<p>I began Day 2 with a solo round of lightning demos in order to see what existing solutions exist for museum visitors today. While investigating these apps, I focused on the main user goal of “learning more” while avoiding being “overwhelmed”. I studied three well-rated and relatively widely-used apps: the AMNH Explorer, Smartify, and the Rijksmuseum app.</p>
+		
+		<div class= "image image-right">
+		<a href="images/gallerypal/lightning demos.png" data-fancybox="images">
+		<img src="images/gallerypal/lightning demos_thumb.png" alt="Lightning Demos" />
+		</a>
+		</br>
+		<center><i>Screens from Explorer, Smartify, and Rijksmuseum respectively</i></center>
+		</br>
+		</div>
+		
+	
+		<h4>Explorer - American Museum of Natural History App</h4>
+	
+		<p>The Explorer app was mainly meant to help a visitor navigate the AMNH museum, using location-based information to give directions. It provided additional focal points of specific exhibits that could be tuned by choosing your Interests. Clicking on a specific exhibit point thus gave some information, including, but not limited to, audio clips, interactive activities like selfie taking, and additional information about the display. </p>
+		
+		<h4>Smartify</h4>
+
+		<p>Smartify is an app that covers many different art museums. The feature that was most interesting was the scan feature, that allowed you to use your camera to scan an artwork and it would identify it for you. Depending on the piece of artwork, there would be different information available, including the artist, date of creation, and informational text. Because it doesn’t curate to a specific museum, all interaction feels one-off and hard to navigate through.  </p>
+		
+		<h4>Rijksmuseum</h4>
+		<p>The Rijksmuseum is a very thorough and sophisticated museum app. Not only can all artworks be looked up by a number, which will then display information about the piece, it also has a variety of different tours that can be arranged or personalized. The audio guides sometimes also have additional “learn more” interviews with curators, culinary experts, etc. on top of the explanatory guide information. There is also a map that helps guide you on the tour.</p>		
+	
+		
+		<div class="clearfix">
+			</br>
+			</br>
+		</div>
+	<div class= "image image-left">
+		<a href="images/gallerypal/crazy8s.jpg" data-fancybox="images">
+		<img src="images/gallerypal/crazy8s_thumb.jpg" alt="Crazy 8s Sketches" />
+		</a>
+	</div>
+	<h3>Sketching the Critical Screen</h3>
+	</br>
+	<p>I then used the Crazy 8’s method of sketching 8 different screens in 8 minutes to quickly ideate on my most critical screen. I chose the screen that would display the artwork and its accompanying audio tracks.</p>
+	</br>
+
+	<div class="clearfix">
+			</br>
+			</br>
+		</div>
+	
+
+	<h3>Solution Sketch</h3>
+	</br>
+	<p>I then picked one of my Crazy 8s designs to refine into our solution sketch. I decided that the app would use hands-free scanning once the camera app was open. Upon scanning, it would take the visitor to the artwork’s page. There would be a playlist of information for the piece that the visitor can click on to listen to. </p>
+	<p>This design would give different easy-to-digest stories about the artwork, while removing any friction involved in having to identify and search independently for more information. By keeping it an audio format, the visitor doesn’t have to look away from the art either. </p>
+	</br>
+
+	<div class= "image image-centered">
+		<a href="images/gallerypal/sketches.jpg" data-fancybox="images">
+		<img src="images/gallerypal/sketches_thumb.png" alt="Solution Sketches" />
+		</a>
+		</div>
+	</br>
+
+	</div>
+    
+  
+
+<!-- SECTION 4-->   
+	<div class="page">
+		<div class = "title">
+            <h3 style="text-align:center">Day 3: Decide</h3>
+        </div> 
+		<h3>Storyboard</h3>
+		</br>
+		<p>On Day 3, I had to nail down the key functionality of GalleryPal. Because the main purpose was the scan and audio guide interaction, I focused on expanding those interactions. As each artwork has its own playlist, I created a tour playlist as well, that would mix and match the artworks into different, curated routes. Discoverability was key here. I wanted to give the user lots of different ways to find out more information about the art, without overwhelming them. </p>
+		</br>
+
+		<div class= "image image-centered">
+			<a href="images/gallerypal/storyboard.png" data-fancybox="images">
+			<img src="images/gallerypal/storyboard_thumb.png" alt="User Stories" />
+			</a>
+			</br>
+			<center><i>Storyboard for GalleryPal</i></center>
+			</br>
+		</div>
+		
+		</br>
+		
+	</div>
+	
+<!-- SECTION 5 -->
+
+	<div class = "page"  style="background-color:#f5f6fb">
+		<div class = "centercontent">
+			<h2>Day 4: Prototype</h2>	
+		</br>
+		</div>
+
+		<h3>Building the Hi-Fis</h3>
+		</br>
+		<p>On Day 4, I took my storyboard and developed it into a lightweight, high fidelity prototype for testing. By using actual museum pieces and information from the galleries themselves, I got a better sense of what information could be found about artworks and how it might be organized on the screen. For the UI design, I used prebuilt components from Marvel to accelerate the design process and opted for a clean, white and blue color scheme to frame the art as much as possible.  </p>
+		</br>
+		<div class= "image image-centered">
+			<a href="images/gallerypal/hifi.png" data-fancybox="images">
+			<img src="images/gallerypal/hifi.png" alt="Prototype Image" />
+			</a>
+			</br>
+			<center><i>Prototype created in Marvel</i></center>
+			</br>
+		</div>
+
+		
+	</div>
+	
+	<!--SECTION 6 -->
+	
+	<div class="page">
+		<div class = "title">
+            <h3 style="text-align:center">Day 5: Validate</h3>
+        </div> 
+	<h4>Usability Testing</h4>
+	<p>On Day 5, I tested my GalleryPal design with six participants. Most of my participants had gone to a museum at least once in the past year. Some people worked their way methodically through the exhibits, reading all the plaques, but others simply went to special exhibitions or looked only at whatever interested them. Two people mentioned using audio guides before as well. </p>
+	<p>I gave my participants three tasks to complete on the prototype: learning about a specific piece, learning about an artist, and learning about multiple pieces in the gallery. I found several consistent usability problems cropped up during the testing. </p>
+	</br>
+	<center><table style "width:100%">
+		  <tr>
+			<th>Usability Issue</th>
+			<th>Number of Participants Encountered</th>
+			<th>Ranking</th>
+		  </tr>
+		  <tr>
+			<td>Confusion about scanning functionality  due to lack of visual feedback</td>
+			<td>5/6</td>
+			<td>Critical</td>
+		  </tr>
+		  <tr>
+			<td>Did not notice or understand what the tour card entailed and therefore did not click through</td>
+			<td>3/6</td>
+			<td>Critical</td>
+		  </tr>
+		  <tr>
+			<td>Did not notice the artist name was a link due to placement and size</td>
+			<td>4/6</td>
+			<td>Medium</td>
+		  </tr>
+		  <tr>
+			<td>Expected the transcript to automatically populate when the audio track is clicked</td>
+			<td>2/6</td>
+			<td>Medium</td>
+		  </tr>
+		<tr>
+			<td>Confusion if audio track would resume if paused</td>
+			<td>1/6</td>
+			<td>Low</td>
+		 </tr>	
+		</table></center>
+	</br>
+	</br>
+
+	<h4>Recommendations and Future Iterations</h4>
+	
+	<p>To address the confusion about the scanning screen, I would add visual feedback during the scanning in the form of a notification or pop up bar to let the user know if the scan was complete, successful, or incomplete. </p>
+	<p>The other major usability problem was the tour card being too small or not interesting enough to click on. There are two ways to solve this. One is to develop the homepage and the tour page, as the primary access into a tour will likely not be from the specific art piece, but from the app homepage. The second would be to increase the size of the tour banner and include additional copy text, so that users will be able to tell what the tour card leads to and be incentivized to interact with it. </p>
+	<p>Other small changes include moving the artist’s name down and making it a bit larger, to emphasize it is a link. I might also add a banner for the artist at the bottom and change the audio player icons to reflect a paused versus stopped state. </p>
+
+
+	</div>
+	
+	
+<!-- Section 7-->
+	
+	<div class = "page"  style="background-color:#f5f6fb">
+		<div class = "centercontent">
+            <h2 style="text-align:center">Conclusions and Reflections</h2>
+			</br>
+        </div> 
+	
+		<p>Overall, this was my first time using the Google Ventures Design Sprints. I found the breakdown of the design process during the five days challenging, because it forced me to keep a tight hold on the scope of the project and only focus on the critical paths. There were a lot of avenues I wanted to develop further that I couldn’t, such as an interactive map, a lookup system, and additional curation features.</p>
+		<p>Some testers also had additional feature ideas, such as translation options and a way to bookmark favorite art pieces, that could greatly expand the usefulness of the app. These could be implemented in future iterations. I would also be interested in expanding the types of testing, by having users actually interact with the app within a gallery space, given the physical-digital medium would produce unique user interactions that a purely digital test does not. </p>
+		<p>All my usability test participants said they would use an app like this, if available in a gallery they were visiting. Given the limited scope of the design sprint, I was pleased that users found the MVP relatively intuitive and enjoyable to use. I’d like to continue to expand and develop the project in future sprints.</p>
+
+	
+	</div>
+    
+    <!--CONTACT 
+        <div id="content">
+			<div class="title">
+				<h2>Contact Me</h2>
+				
+            </div>
+            <p>Questions? Send me an email at <a href="mailto:jzfchang@gmail.com">jzfchang@gmail.com</a>. You can also find me at my <a href="https://www.linkedin.com/in/joie-chang">LinkedIn</a>.</p>
+                            
+        </div>
+		
+            <div id="sidebar">
+                <div class="box2">
+                    <div class= "image image-left"><img src="images/border.png" alt="Joie Chang's Photo" /></div>
+                </div>
+            </div>
+        </div>
+   </div>
+    -->
+    
+    
+
+<div id="copyright" class="container">
+	<p>&copy; Joie Chang. All rights reserved. </p>
+</div>
+
+
+<script src="jquery-3.2.1.min.js"></script>
+    <script src="fancybox-master/dist/jquery.fancybox.min.js"></script>
+
+    <script type="text/javascript">
+        $().fancybox({
+            selector : '[data-fancybox="images"]',
+            thumbs   : false,
+            hash     : false,
+            protect : true,
+            keyboard : false,
+            loop : false, 
+            arrows: false,
+            toolbar: false,
+            
+            //in order to stop it from cycling through filtered options, currently disabled looping and keyboard arrows
+            
+        mobile : {
+            clickContent : function( current, event ) {
+                return current.type === 'image' ? 'toggleControls' : false;
+            },
+            clickSlide : function( current, event ) {
+                return current.type === 'image' ? 'toggleControls' : 'close';
+            },
+            dblclickContent : function( current, event ) {
+                return current.type === 'image' ? 'zoom' : false;
+            },
+            dblclickSlide : function( current, event ) {
+                return current.type === 'image' ? 'zoom' : false;
+            }
+        },
+    
+        });
+      
+
+</script>
+    <script src="mixitup.min.js"></script>
+    
+    <script>
+        var containerEl = document.querySelector('.container');
+        var mixer = mixitup(containerEl);
+    </script>
+    
+    </body>
+
+</html>

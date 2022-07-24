@@ -31,6 +31,13 @@ p {
 strong {
 }
 
+
+th, td {
+  padding-right: 25px;
+  text-align: left;
+  padding-bottom:5px;
+}
+
 a {
 	color: #171717;
 }
@@ -46,6 +53,7 @@ a img {
 	.image
 	{
 		display: inline-block;
+		clear: both;
 	}
 	
 		.image img
@@ -65,6 +73,12 @@ a img {
 	{
 		float: left;
 		margin: 0 2em 2em 0;
+	}
+	
+	.image-right
+	{
+		float: right;
+		margin: 0 2em 0 2em;
 	}
 	
 	.image-centered
@@ -100,6 +114,7 @@ img {
 		margin: 0;
 		padding: 0;
 		list-style: none;
+		
 	}
 	
 	ul.style1 li
@@ -363,6 +378,14 @@ img {
 
 /** CONTENT */
 
+
+#content-right
+{
+	float:right;
+	width: 950px;
+	padding-left: 15em;
+}
+
 #content
 {
 	float: right;
@@ -414,6 +437,39 @@ img {
     transition:         all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
+.topcontent
+{
+	float: right;
+	width: auto;
+    padding-top:9em;
+
+}
+
+.topcontent a {
+
+	letter-spacing: 2px;
+	
+    padding: 10px 30px;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 0.80em;
+	font-weight: 600;
+	border: none;
+	color: #fff;
+    background-color:#677194;
+    margin-right:1em;
+    margin-left: 1em;
+}
+
+.topcontent a:hover {
+	text-decoration: none;
+    background: #dd7474;
+    -webkit-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition:         all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+
 .twocolumn{
     padding: 2em 4em 2em 1em;
     float:left;
@@ -454,6 +510,20 @@ img {
 	#sidebar .box1
 	{
 		margin-bottom: 3em;
+	}
+	
+	
+	#sidebar-left
+	{
+		float: left;
+		width: auto;
+		padding-top: 6em;
+	}
+	
+	#sidebar-right
+	{
+		float: right;
+		width: 600px;
 	}
 
 
@@ -758,6 +828,13 @@ img {
 		padding-left: 40px;
 	}
 
+	#box4
+	{
+		float: left;
+		width: 600px;
+		margin-left: 24px;
+		padding-right: 30px;
+	}
 
 
 
