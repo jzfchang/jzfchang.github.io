@@ -393,6 +393,12 @@ img {
     padding-top:7em;
 }
 
+#content-left
+{
+	float: left;
+	width: 550px;
+    padding-top:7em;
+}
 .basiccontent
 {
 	float: right;
